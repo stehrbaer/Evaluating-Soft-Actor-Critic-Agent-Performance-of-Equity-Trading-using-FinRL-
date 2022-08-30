@@ -73,7 +73,9 @@ Following the implementation of the agent via Alpaca's paper trading platform us
 
 The portfolio showed an overall value of $102,800.44, an marginal increase from the starting value of $100,0000. 
 
+# Disclaimer 
 
+None of this information dictates or should represent financial advise. When trading please act responsibly. This project was entirely academic. 
 
 Code Sourcing: @article{finrl2020,
     author  = {Liu, Xiao-Yang and Yang, Hongyang and Chen, Qian and Zhang, Runjia and Yang, Liuqing and Xiao, Bowen and Wang, Christina Dan},
