@@ -65,6 +65,22 @@ We would expect the SAC Agent to be implement these risk assessment measures, wh
 
 The following plot compares the agents actions for the top eight equities with the highest return-to-volatility ratio versus the bottom-eight. As can be seen by the graph the agent does favor actions using equities with higher return to risk ratios, highlighting the algorithms ability to categorize risk factors when selecting to buy, sell or hold an asset. 
 
+# NASDAQ 
+
+The same exercises was completed using the NASDAQ 100 index, a more comprehensive dataset. In this version, technical indicators were selected for the agent instead of using the default indicators. 
+
+Cumulative Returns using LR of 0.0001
+
+<img width="444" alt="Screenshot 2022-09-01 at 11 12 18" src="https://user-images.githubusercontent.com/67784016/187890048-481eb2d4-c34d-4b0e-ba86-15c2c60bcade.png">
+
+Cumulative Returns using LR of 0.0003
+
+<img width="458" alt="Screenshot 2022-09-01 at 11 12 36" src="https://user-images.githubusercontent.com/67784016/187890099-cb7b605b-5e7b-49a3-85c5-35afc218efb6.png">
+
+The SAC agent was given the NASDAQ-100 index to trade, a larger dataset with 70 more equities to trade within the virtual environment. The SAC agent still outperformed the NASDAQ benchmark; 7.6% annual returns versus 6.8% set by the benchmark, 15.6% cumulative returns versus 13.9% by the benchmark and 24.76% annual volatility versus 25.3% set by the benchmark. 
+
+When the same agent was reconfigured with a higher learning rate (0.0003), the agent’s performance once again improved, resulting in annual returns of 12.23%, cumulative returns of 25.783%, but accompanied with higher annual volatility 33.3%.  
+
 # Alpaca Performance 
 
 Following the implementation of the agent via Alpaca's paper trading platform using ElegantRL, the algorithm was run for 3-days, using 60-minute time intervals for the data feed. 
